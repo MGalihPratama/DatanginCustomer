@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbar_membership"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Membership"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:id="@+id/logo_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level_datangin"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/logo_pts"/>
+            <TextView
+                android:id="@+id/point_datangin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="100.000"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"
+                android:layout_marginTop="3dp"
+                android:layout_alignLeft="@+id/logo_pts"
+                android:layout_marginLeft="18dp"
+                android:textColorHint="#000000"
+                android:layout_below="@+id/level_datangin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pts"
+                android:layout_alignLeft="@+id/point_datangin"
+                android:layout_below="@+id/level_datangin"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginLeft="59dp"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/garis_pemisah1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolbar_membership"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/garis_pemisah1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/membership"
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:elevation="5dp"
+            android:background="@drawable/btn_voucher"
+            android:hint="Membership"
+            android:textColorHint="@color/color_datangin"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:elevation="5dp"
+            android:background="@drawable/btn_voucher_saya"
+            android:textColorHint="@color/color_datangin"
+            android:textStyle="bold"
+            android:hint="Langganan"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tempat_tombol_voucher">
+
+        <ImageView
+            android:id="@+id/lambang_membership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lambang_membership"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lambang_membership"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nantikan penawaran menarik"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dari datangin!"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

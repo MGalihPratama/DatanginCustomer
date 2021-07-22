@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_dpNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Vanilla Latte"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000000"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/tv_dpUkuran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Vanilla Latte - Lare"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/tv_dpJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vanilla Latte"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000000"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_dpTotalBeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+</LinearLayout>

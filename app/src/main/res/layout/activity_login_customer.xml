@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/konten1"
+    android:layout_height="match_parent"
+    tools:context=".LoginCustomer">
+
+    <LinearLayout
+        android:id="@+id/linier_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="242dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/datangin_no_backgroud"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_style"
+            android:fontFamily="@font/poppins"
+            android:hint="Alamat Email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:hint="PIN"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/form_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lupa_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linier_login"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:fontFamily="@font/poppins"
+        android:lineHeight="18dp"
+        android:text="Lupa Password?"
+        android:textColor="@color/color_datangin"
+        android:textFontWeight="500"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/lupa_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_style"
+            android:fontFamily="@font/poppins"
+            app:backgroundTint="@null"
+            android:hint="Masuk"
+            android:textSize="16sp"
+            android:textColorHint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="28dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Belum punya akun?"/>
+            <TextView
+                android:id="@+id/daftar_disini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=" Daftar disini"
+                android:textColor="@color/color_datangin"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

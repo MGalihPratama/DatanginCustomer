@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_logo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/garis_pemisah1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/header_order"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/pickup_wilayah"
+        android:layout_below="@+id/garis_pemisah1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="13dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delivery"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup."
+                    android:fontFamily="@font/poppins"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins"
+                    android:text=" kirim ke alamat"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="#FFFFFF"
+                android:drawableEnd="@drawable/vector_kebawah"
+                android:hint="Nama Wilayah    "
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/garis_pemisah2"
+        android:layout_below="@+id/pickup_wilayah"
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_height="8dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis_pemisah2"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="81dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Favorite"
+            android:background="@drawable/btn_tag"/>
+        <Button
+            android:layout_width="81dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Baru"
+            android:background="@drawable/btn_tag"/>
+        <Button
+            android:layout_width="104dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Terdekat"
+            android:background="@drawable/btn_tag"/>
+    </LinearLayout>
+</RelativeLayout>

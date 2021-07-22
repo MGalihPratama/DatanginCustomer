@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifikasiCustomer">
+
+    <LinearLayout
+        android:id="@+id/daftar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back_verifikasi"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/back_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/poppins"
+            android:lineHeight="24dp"
+            android:text="Verifikasi No Telephone"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/line"
+        android:layout_below="@+id/daftar_back"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="Kode verifikasi telah dikirimkan"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="cek kodenya pada Whatsapp yang dikirim"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="ke nomor "
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="08xxxxxxxxxx"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:background="@drawable/form_style"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/form_style"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/form_style"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/form_style"
+                android:fontFamily="@font/poppins"
+                android:inputType="number"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_verifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="74dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/poppins"
+        app:backgroundTint="@null"
+        android:hint="Verifikasi"
+        android:textSize="16sp"
+        android:textColorHint="@color/white" />
+
+</RelativeLayout>

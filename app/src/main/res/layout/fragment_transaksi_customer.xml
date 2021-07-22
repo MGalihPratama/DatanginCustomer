@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Transaksi"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/garis_pemisah1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/header_order"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:id="@+id/tempat_tombol_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/garis_pemisah1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/voucher"
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:elevation="5dp"
+            android:background="@drawable/btn_voucher"
+            android:hint="Diproses"
+            android:textColorHint="@color/color_datangin"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <Button
+            android:layout_width="172dp"
+            android:layout_height="41dp"
+            android:layout_alignLeft="@+id/voucher"
+            android:elevation="5dp"
+            android:background="@drawable/btn_voucher_saya"
+            android:textColorHint="@color/color_datangin"
+            android:textStyle="bold"
+            android:hint="Selesai"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvtransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
